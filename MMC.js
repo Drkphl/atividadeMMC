@@ -2,7 +2,7 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 function calcularMMC(a, b) {
@@ -24,6 +24,7 @@ function calcularMDC(a, b) {
     }
     return a;
 }
+// comentario
 
 rl.question('Digite o primeiro número: ', (num1) => {
     rl.question('Digite o segundo número: ', (num2) => {
@@ -36,7 +37,7 @@ rl.question('Digite o primeiro número: ', (num1) => {
             const mmc = calcularMMC(num1, num2);
             console.log(`O MMC de ${num1} e ${num2} é ${mmc}.`);
         }
-        
+
         rl.close();
     });
 });
